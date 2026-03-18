@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import { UserInputForm } from "@/app/component/form/userInputForm";
-import { FormSteps } from "@/app/component/form/step/fromSteps";
-import { UserDataPreview } from "@/app/new/component/userDataPreview";
+import { CertificateInputForm } from "@/app/new/component/CertificateInputForm";
+import { CertificateFormSteps } from "@/app/new/component/CertificateFormSteps";
+import { CertificateDataPreview } from "@/app/new/component/CertificateDataPreview";
 import { useForm, FormProvider } from "react-hook-form";
 import { useEffect, useState } from "react";
 
@@ -38,17 +38,17 @@ export const NewInvoiceForm = () => {
                   alt="logo"
                 />
                 <div>
-                  <p className="font-semibold">Invoice Generator</p>
-                  <p className="text-orange-500 text-sm">By Prolab</p>
+                  <p className="font-semibold">Share Certificate Generator</p>
+                  <p className="text-primary text-sm">By ThinkHuman</p>
                 </div>
               </div>
-              <UserInputForm />
+              <CertificateInputForm />
             </div>
-            <FormSteps />
+            <CertificateFormSteps />
           </div>
           <div className="relative min-h-screen h-full w-full flex justify-center items-center p-4 md:p-0">
             <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
-            <UserDataPreview />
+            <CertificateDataPreview />
           </div>
         </FormProvider>
       ) : (
