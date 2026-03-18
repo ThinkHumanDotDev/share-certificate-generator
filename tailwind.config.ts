@@ -18,6 +18,12 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        primary: {
+          DEFAULT: 'oklch(var(--primary) / <alpha-value>)',
+          foreground: 'oklch(var(--primary-foreground) / <alpha-value>)',
+        },
+      },
       fontSize: {
         xxs: '11px'
       },

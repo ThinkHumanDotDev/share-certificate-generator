@@ -27,10 +27,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         id={label}
         className={`peer block w-full border-0 py-1.5 text-gray-900 focus:ring-0 sm:text-sm sm:leading-6 ${
           label ? "text-right" : "p-0"
-        }  placeholder:text-neutral-700/40 placeholder:font-medium caret-orange-500`}
+        }  placeholder:text-neutral-700/40 placeholder:font-medium caret-primary`}
       />
       <div
-        className="absolute inset-x-0 bottom-0 border-t border-gray-300 peer-hover:border-neutral-400 peer-focus:border-t peer-focus:border-orange-500 border-dashed"
+        className="absolute inset-x-0 bottom-0 border-t border-gray-300 peer-hover:border-neutral-400 peer-focus:border-t peer-focus:border-primary border-dashed"
         aria-hidden="true"
       />
     </div>

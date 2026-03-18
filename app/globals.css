@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --radius: 0.65rem;
+    --primary: 0.488 0.243 264.376;
+    --primary-foreground: 0.97 0.014 254.604;
+    --ring: 0.708 0 0;
+    --border: 0.92 0.004 286.32;
+    --input: 0.92 0.004 286.32;
+    --muted-foreground: 0.552 0.016 285.938;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

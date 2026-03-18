@@ -56,7 +56,7 @@ const DateInput = ({ label, variableName }: CustomNumberProps) => {
           </Popover>
           <div
             className={`absolute border-dashed inset-x-0 bottom-0 border-t border-gray-300  group-focus:border-t ${
-              open ? "border-orange-500" : "group-hover:border-neutral-400"
+              open ? "border-primary" : "group-hover:border-neutral-400"
             }`}
             aria-hidden="true"
           />

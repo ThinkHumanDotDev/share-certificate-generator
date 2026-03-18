@@ -42,7 +42,7 @@ const Home = () => {
         </a>
         <div className="justify-center items-center h-full flex flex-col my-10">
           <div className="border-t border-dashed border-gray-300 w-full mx-auto py-10 flex justify-center items-center relative">
-            <Plus className="text-orange-500 group-hover:text-orange-500 w-7 h-7 absolute top-0 -translate-x-1/2 -translate-y-1/2 left-0" />
+            <Plus className="text-primary group-hover:text-primary w-7 h-7 absolute top-0 -translate-x-1/2 -translate-y-1/2 left-0" />
             <Image
               src="/android-chrome-512x512.png"
               width={100}
@@ -54,16 +54,16 @@ const Home = () => {
           <div className="relative group">
             <h1 className="font-semibold text-3xl md:text-7xl text-center w-full border-t border-b py-6 border-dashed text-balance px-4 text-black border-gray-300">
               <span className="">Get Paid Faster with Free </span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-br from-orange-500 to-pink-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary to-primary/80">
                 Invoice Generator
               </span>
             </h1>
           </div>
           <div className="pt-10 pb-11 flex gap-3 items-center mx-auto border-gray-300 border-b w-full justify-center border-dashed relative">
-            <Plus className="text-orange-500 group-hover:text-orange-500 w-7 h-7 absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2" />
+            <Plus className="text-primary group-hover:text-primary w-7 h-7 absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2" />
             <Link
               href="/new"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring font-medium disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-br from-orange-500 to-pink-400 text-white hover:bg-black/90 px-6 py-2 text-lg"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring font-medium disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-br from-primary to-primary/80 text-white hover:bg-black/90 px-6 py-2 text-lg"
             >
               Generate Invoice
             </Link>
@@ -96,7 +96,7 @@ const Home = () => {
                   <Users className="w-4 h-4" />
                   <span className="text-xs">Trusted by</span>
                 </div>
-                <span className="text-transparent bg-clip-text bg-gradient-to-br from-orange-500 to-pink-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary to-primary/80">
                   200
                 </span>
                 <span className="text-xs">users</span>
@@ -106,7 +106,7 @@ const Home = () => {
                   <Download className="w-4 h-4" />
                   <span className="text-xs">Download</span>
                 </div>
-                <span className="text-transparent bg-clip-text bg-gradient-to-br from-orange-500 to-pink-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary to-primary/80">
                   400
                 </span>
                 <span className="text-xs">Invoices</span>
@@ -121,10 +121,10 @@ const Home = () => {
           Here&apos;s why you&apos;ll love our Free Invoice Generator
         </p>
         <div className="grid sm:grid-cols-2 relative">
-          <Plus className="text-orange-500 group-hover:text-orange-500 w-7 h-7 absolute top-0 -translate-x-1/2 -translate-y-1/2 left-0" />
-          <Plus className="text-orange-500 group-hover:text-orange-500 w-7 h-7 absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2" />
+          <Plus className="text-primary group-hover:text-primary w-7 h-7 absolute top-0 -translate-x-1/2 -translate-y-1/2 left-0" />
+          <Plus className="text-primary group-hover:text-primary w-7 h-7 absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2" />
           <div className="border-r border-b border-dashed p-7 border-gray-300 flex justify-center flex-col items-center">
-            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-orange-100 to-pink-100">
+            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-primary/10 to-primary/5">
               <Rocket />
             </p>
             <p className="font-bold text-xl">Fast & Easy</p>
@@ -134,7 +134,7 @@ const Home = () => {
             </p>
           </div>
           <div className="border-b border-dashed flex justify-center flex-col items-center p-7 border-gray-300">
-            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-orange-100 to-pink-100">
+            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-primary/10 to-primary/5">
               <Infinity />
             </p>
             <p className="font-bold text-xl">Free & Unlimited</p>
@@ -143,7 +143,7 @@ const Home = () => {
             </p>
           </div>
           <div className="border-r border-b border-dashed flex justify-center flex-col items-center p-7 border-gray-300">
-            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-orange-100 to-pink-100">
+            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-primary/10 to-primary/5">
               <NotebookText />
             </p>
             <p className="font-bold text-xl">Beautiful Templates</p>
@@ -153,7 +153,7 @@ const Home = () => {
             </p>
           </div>
           <div className="border-b border-gray-300 border-dashed flex justify-center flex-col items-center p-7">
-            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-orange-100 to-pink-100">
+            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-primary/10 to-primary/5">
               <Receipt />
             </p>
             <p className="font-bold text-xl">Get Paid Faster</p>
@@ -163,7 +163,7 @@ const Home = () => {
             </p>
           </div>
           <div className="border-r border-gray-300 border-b border-dashed flex justify-center flex-col items-center p-7">
-            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-orange-100 to-pink-100">
+            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-primary/10 to-primary/5">
               <Hourglass />
             </p>
             <p className="font-bold text-xl">Save Time & Money</p>
@@ -172,7 +172,7 @@ const Home = () => {
             </p>
           </div>
           <div className="border-b border-dashed p-7 border-gray-300 flex justify-center flex-col items-center">
-            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-orange-100 to-pink-100">
+            <p className="border flex justify-center items-center w-11 h-11 border-dashed rounded-lg text-2xl mb-5 border-gray-300 bg-gradient-to-br from-primary/10 to-primary/5">
               <CodeXml />
             </p>
             <p className="font-bold text-xl">Free & Open Source</p>
@@ -183,14 +183,14 @@ const Home = () => {
           </div>
         </div>
         <div className="px-5 py-11 flex justify-center items-center border-b border-dashed border-gray-300">
-          <div className="flex justify-center rounded-2xl max-w-3xl border-dashed items-center px-4 py-10 w-full flex-col gap-4  bg-gradient-to-br from-orange-100 to-pink-100">
+          <div className="flex justify-center rounded-2xl max-w-3xl border-dashed items-center px-4 py-10 w-full flex-col gap-4  bg-gradient-to-br from-primary/10 to-primary/5">
             <p className="md:max-w-2xl text-center font-semibold text-xl text-black p-4 md:text-3xl text-balance">
               Stop wasting time and start getting paid what you deserve. Try our
               Free Invoice
             </p>
             <Link
               href="/new"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring font-medium disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-br from-orange-500 to-pink-400 text-white hover:bg-black/90 px-6 py-2 text-lg"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring font-medium disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-br from-primary to-primary/80 text-white hover:bg-black/90 px-6 py-2 text-lg"
             >
               Generate Today!
             </Link>
