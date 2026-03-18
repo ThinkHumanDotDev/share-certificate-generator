@@ -1,52 +1,42 @@
-# Free Invoice Generator
+# Share Certificate Generator
 
-<a href="https://www.producthunt.com/posts/invoice-generator-9bce3e1b-dab2-4a7a-ba7e-e315be868119?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-invoice&#0045;generator&#0045;9bce3e1b&#0045;dab2&#0045;4a7a&#0045;ba7e&#0045;e315be868119" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=453378&theme=light&period=daily" alt="Invoice&#0032;Generator - Get&#0032;paid&#0032;faster&#0032;with&#0032;free&#0032;invoice&#0032;generator | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-
-This project provides a user-friendly invoice generation tool for freelancers, small businesses, and contractors. Create professional, customized invoices quickly and easily to ensure you get paid on time, every time.
-
-## ⛰️ Preview
-
-![806shots_so](https://github.com/pranavp10/invoice-generator/assets/49075129/403cffa1-b540-4d62-a9bd-c3c216802fe1)
+A free, open-source tool for generating professional share certificates. Create customized share certificates quickly and easily for your company or organization.
 
 ## Key Features
 
 - **Free & Open Source:** Absolutely no cost, with the freedom to customize and adapt to your specific needs.
-- **Fast & Efficient:** Generate beautiful invoices in seconds by simply filling in the blanks.
-- **Unlimited Invoices:** Create as many invoices as you require, forever, at no charge.
-- **Save Time & Resources:** Eliminate the need for manual invoice creation with spreadsheets and expensive software.
+- **Fast & Efficient:** Generate beautiful share certificates in seconds by simply filling in the details.
+- **Unlimited Certificates:** Create as many certificates as you require, forever, at no charge.
+- **Professional Output:** Download polished, print-ready share certificates as PDFs.
 
-## 🤝 Contributing
-
-### Technologies Used
+## Technologies Used
 
 - **PDF Generator:** [React PDF](https://react-pdf.org/)
 - **Framework:** [Next.js](https://nextjs.org)
 - **Styling:** [Tailwind CSS](http://tailwindcss.com)
 
-### Running Locally
+## Running Locally
 
 Ensure that you have Bun installed.
 
 ```bash
-git clone https://github.com/pranavp10/invoice-generator.git
-cd invoice-generator
+git clone https://github.com/haydenbleasel/share-certificate-generator.git
+cd share-certificate-generator
 bun install
 bun run dev
 ```
 
 Create `.env.local` file similar to `.env.example`.
 
-[Live Invoice Generator Link](https://invoice-generator.prolab.sh/)
+## Credits
 
-### License
+This project is a fork of [invoice-generator](https://github.com/pranavp10/invoice-generator) by [Pranav P](https://github.com/pranavp10), modified to generate share certificates instead of invoices.
 
-You are free to use this code as inspiration. Please do not copy it directly. Crediting the author is appreciated. Please remove all personal information (images, etc.)
+## License
 
-### Support
+You are free to use this code as inspiration. Please do not copy it directly. Crediting the author is appreciated.
+
+## Support
 
 - **Bug Reports:** To report bugs, create an issue on the project's GitHub repository.
 - **Feature Requests:** Feel free to suggest new features by creating an issue on GitHub.
-
-### Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=pranavp10/invoice-generator&type=Date)](https://star-history.com/#pranavp10/invoice-generator&Date)
