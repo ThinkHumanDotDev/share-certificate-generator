@@ -41,7 +41,7 @@ export const AppearanceForm = () => {
       </p>
 
       {/* Orientation */}
-      <p className="text-sm font-medium text-neutral-500 pb-4">Orientation</p>
+      <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400 pb-4">Orientation</p>
       <Controller
         name="orientation"
         defaultValue={getInitialValue("orientation", "portrait")}
@@ -60,10 +60,10 @@ export const AppearanceForm = () => {
                 className="flex flex-col items-center gap-2 group focus:outline-none"
               >
                 <div
-                  className={`w-[88px] h-[64px] overflow-hidden transition-all duration-150 ${
+                  className={`w-[88px] h-[64px] overflow-hidden transition-all duration-150 rounded-md ${
                     value === o
-                      ? "ring-2 ring-primary ring-offset-2"
-                      : "ring-1 ring-neutral-200 hover:ring-neutral-400"
+                      ? "ring-2 ring-primary ring-offset-2 dark:ring-offset-neutral-900"
+                      : "ring-1 ring-neutral-200 dark:ring-neutral-600 hover:ring-neutral-400"
                   }`}
                 >
                   {o === "portrait" ? (
@@ -76,7 +76,7 @@ export const AppearanceForm = () => {
                   className={`text-xs font-medium capitalize transition-colors ${
                     value === o
                       ? "text-primary"
-                      : "text-neutral-500 group-hover:text-neutral-800"
+                      : "text-neutral-500 group-hover:text-neutral-800 dark:group-hover:text-neutral-200"
                   }`}
                 >
                   {o}
@@ -88,7 +88,7 @@ export const AppearanceForm = () => {
       />
 
       {/* Layout — filtered by orientation */}
-      <p className="text-sm font-medium text-neutral-500 pb-4">Layout</p>
+      <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400 pb-4">Layout</p>
       <Controller
         name="certLayout"
         defaultValue={getInitialValue("certLayout", "standard")}
@@ -115,7 +115,7 @@ export const AppearanceForm = () => {
       />
 
       {/* Theme */}
-      <p className="text-sm font-medium text-neutral-500 pb-4">Theme</p>
+      <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400 pb-4">Theme</p>
       <Controller
         name="certTheme"
         defaultValue={getInitialValue("certTheme", "minimal")}

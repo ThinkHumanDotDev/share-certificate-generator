@@ -29,11 +29,11 @@ const DateInput = ({ label, variableName }: CustomNumberProps) => {
               <button className="flex gap-2 items-center justify-between w-full">
                 <label
                   htmlFor={label}
-                  className="block text-sm font-medium leading-6 text-gray-900 whitespace-nowrap"
+                  className="block text-sm font-medium leading-6 text-gray-900 dark:text-neutral-300 whitespace-nowrap"
                 >
                   {label}
                 </label>
-                <div className="flex gap-2 items-center text-sm">
+                <div className="flex gap-2 items-center text-sm dark:text-neutral-300">
                   {value ? format(value, "PPP") : <span>Pick a date</span>}
                   <CalendarIcon className="h-4 w-4" />
                 </div>
@@ -55,7 +55,7 @@ const DateInput = ({ label, variableName }: CustomNumberProps) => {
             </PopoverContent>
           </Popover>
           <div
-            className={`absolute border-dashed inset-x-0 bottom-0 border-t border-gray-300  group-focus:border-t ${
+            className={`absolute border-dashed inset-x-0 bottom-0 border-t border-gray-300 dark:border-neutral-600 group-focus:border-t ${
               open ? "border-primary" : "group-hover:border-neutral-400"
             }`}
             aria-hidden="true"

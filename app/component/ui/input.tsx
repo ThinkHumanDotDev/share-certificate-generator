@@ -14,7 +14,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       {label && (
         <label
           htmlFor={label}
-          className="block text-sm font-medium leading-6 text-gray-900 whitespace-nowrap"
+          className="block text-sm font-medium leading-6 text-gray-900 dark:text-neutral-300 whitespace-nowrap"
         >
           {label}
         </label>
@@ -25,12 +25,12 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         {...props}
         name={label}
         id={label}
-        className={`peer block w-full border-0 py-1.5 text-gray-900 focus:ring-0 sm:text-sm sm:leading-6 ${
+        className={`peer block w-full border-0 py-1.5 bg-transparent text-gray-900 dark:text-neutral-100 focus:ring-0 sm:text-sm sm:leading-6 ${
           label ? "text-right" : "p-0"
-        }  placeholder:text-neutral-700/40 placeholder:font-medium caret-primary`}
+        }  placeholder:text-neutral-700/40 dark:placeholder:text-neutral-500 placeholder:font-medium caret-primary`}
       />
       <div
-        className="absolute inset-x-0 bottom-0 border-t border-gray-300 peer-hover:border-neutral-400 peer-focus:border-t peer-focus:border-primary border-dashed"
+        className="absolute inset-x-0 bottom-0 border-t border-gray-300 dark:border-neutral-600 peer-hover:border-neutral-400 peer-focus:border-t peer-focus:border-primary border-dashed"
         aria-hidden="true"
       />
     </div>

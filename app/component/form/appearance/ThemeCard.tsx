@@ -14,10 +14,10 @@ export const ThemeCard = ({ name, selected, onClick, preview }: ThemeCardProps) 
     className="flex flex-col items-center gap-2 group focus:outline-none"
   >
     <div
-      className={`w-[88px] h-[64px] overflow-hidden transition-all duration-150 rounded-md ${
+      className={`w-[88px] h-[64px] bg-white overflow-hidden transition-all duration-150 rounded-md ${
         selected
-          ? "ring-2 ring-primary ring-offset-2"
-          : "ring-1 ring-neutral-200 hover:ring-neutral-400"
+          ? "ring-2 ring-primary ring-offset-2 dark:ring-offset-neutral-900"
+          : "ring-1 ring-neutral-200 dark:ring-neutral-600 hover:ring-neutral-400 dark:hover:ring-neutral-400"
       }`}
     >
       {preview}
@@ -26,7 +26,7 @@ export const ThemeCard = ({ name, selected, onClick, preview }: ThemeCardProps) 
       className={`text-xs font-medium transition-colors ${
         selected
           ? "text-primary"
-          : "text-neutral-500 group-hover:text-neutral-800"
+          : "text-neutral-500 group-hover:text-neutral-800 dark:group-hover:text-neutral-200"
       }`}
     >
       {name}

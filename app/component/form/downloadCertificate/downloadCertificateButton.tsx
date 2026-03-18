@@ -4,16 +4,39 @@ import { Button } from "@/components/ui/button";
 import { Document, Page, pdf } from "@react-pdf/renderer";
 import { CheckCircle2, Download, LoaderIcon } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useFormContext } from "react-hook-form";
 import { useCertificateData } from "@/app/hooks/useCertificateData";
 import { CertificatePdf } from "@/app/component/form/downloadCertificate/certificatePdf";
 import { saveAs } from "file-saver";
+
+const APPEARANCE_KEYS = ["orientation", "certTheme", "certLayout"];
+const FORM_KEYS = [
+  "certCompanyName", "certCompanyRegNumber", "certCompanyAddress", "certCompanyCity",
+  "certCompanyState", "certCompanyZip", "certCompanyCountry", "certCompanyLogo",
+  "shareholderName", "shareholderEmail", "shareholderAddress", "shareholderCity",
+  "shareholderState", "shareholderZip", "shareholderCountry",
+  "certificateNumber", "numberOfShares", "shareClass", "nominalValue",
+  "considerationPaid", "shareIssueDate", "director1Name", "director2Name", "secretaryName",
+];
 
 export const DownloadCertificateButton = () => {
   const [status, setStatus] = useState<
     "downloaded" | "downloading" | "not-downloaded"
   >("not-downloaded");
+  const { reset, getValues } = useFormContext();
   const { companyDetails, shareholderDetails, shareDetails, signatoryDetails, appearance } =
     useCertificateData();
+
+  const handleReset = () => {
+    const currentValues = getValues();
+    const preserved: Record<string, string> = {};
+    APPEARANCE_KEYS.forEach((key) => {
+      preserved[key] = currentValues[key] ?? localStorage.getItem(key) ?? "";
+    });
+    FORM_KEYS.forEach((key) => localStorage.removeItem(key));
+    localStorage.setItem("step", "1");
+    reset({ step: "1", ...preserved, ...Object.fromEntries(FORM_KEYS.map((k) => [k, ""])) });
+  };
 
   useEffect(() => {
     if (status === "downloaded") {
@@ -86,6 +109,13 @@ export const DownloadCertificateButton = () => {
             </>
           )}
         </Button>
+        <button
+          type="button"
+          onClick={handleReset}
+          className="mt-3 w-full text-sm text-neutral-400 hover:text-neutral-600 transition-colors text-center"
+        >
+          Reset and start over
+        </button>
       </div>
     </div>
   );
