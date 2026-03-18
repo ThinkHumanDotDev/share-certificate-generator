@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { FileText, Download, LoaderIcon, Upload, RotateCcw, Sun, Moon, SunMoon } from "lucide-react";
 import { Document, Page, pdf } from "@react-pdf/renderer";
@@ -55,14 +55,14 @@ export const FloatingActionButtons = () => {
   const [themeMode, setThemeMode] = useState<ThemeMode>("system");
   const importInputRef = useRef<HTMLInputElement>(null);
 
-  const applyTheme = (mode: ThemeMode) => {
+  const applyTheme = useCallback((mode: ThemeMode) => {
     if (mode === "system") {
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       document.documentElement.classList.toggle("dark", prefersDark);
     } else {
       document.documentElement.classList.toggle("dark", mode === "dark");
     }
-  };
+  }, []);
 
   useEffect(() => {
     const stored = (localStorage.getItem("theme") ?? "system") as ThemeMode;
@@ -75,7 +75,7 @@ export const FloatingActionButtons = () => {
     };
     mq.addEventListener("change", onMqChange);
     return () => mq.removeEventListener("change", onMqChange);
-  }, []);
+  }, [applyTheme]);
 
   const handleThemeToggle = () => {
     const cycle: ThemeMode[] = ["light", "dark", "system"];

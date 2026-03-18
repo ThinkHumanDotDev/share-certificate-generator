@@ -225,6 +225,7 @@ const CompanyHeader = ({
       ) : null}
     </View>
     {companyDetails.certCompanyLogo ? (
+      // eslint-disable-next-line jsx-a11y/alt-text
       <Image
         src={companyDetails.certCompanyLogo}
         style={{ width: 48, height: 48, borderRadius: 4 }}
