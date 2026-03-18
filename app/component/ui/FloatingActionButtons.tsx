@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useFormContext } from "react-hook-form";
-import { Download, LoaderIcon, Upload, RotateCcw, Share2, Sun, Moon, SunMoon } from "lucide-react";
+import { FileText, Download, LoaderIcon, Upload, RotateCcw, Sun, Moon, SunMoon } from "lucide-react";
 import { Document, Page, pdf } from "@react-pdf/renderer";
 import { saveAs } from "file-saver";
 import { useCertificateData } from "@/app/hooks/useCertificateData";
@@ -183,7 +183,7 @@ export const FloatingActionButtons = () => {
               {exportStatus === "loading" ? (
                 <LoaderIcon className="w-4 h-4 animate-spin" />
               ) : (
-                <Download className="w-4 h-4" />
+                <FileText className="w-4 h-4" />
               )}
             </button>
           </TooltipTrigger>
@@ -197,7 +197,7 @@ export const FloatingActionButtons = () => {
               onClick={handleExportConfig}
               className={FAB_CLASS}
             >
-              <Share2 className="w-4 h-4" />
+              <Download className="w-4 h-4" />
             </button>
           </TooltipTrigger>
           <TooltipContent side="left">Export fields/config</TooltipContent>
