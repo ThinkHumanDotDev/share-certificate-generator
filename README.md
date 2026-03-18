@@ -1,5 +1,9 @@
 # Share Certificate Generator
 
+<a href="https://www.producthunt.com/products/share-certificate-generator?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-share-certificate-generator" target="_blank" rel="noopener noreferrer"><img alt="Share Certificate Generator - Generate modern, professional share certificates for free | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1101382&theme=light&t=1773818209695"></a>
+
+![Share Certificate Generator](https://raw.githubusercontent.com/ThinkHumanDotDev/share-certificate-generator/main/public/og-image.jpeg)
+
 A free, open-source tool for generating professional share certificates. Create customized share certificates quickly and easily for your company or organization.
 
 ## Key Features
