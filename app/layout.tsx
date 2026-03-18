@@ -10,7 +10,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_URL!),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_URL ?? "https://localhost:3000"),
   alternates: {
     canonical: "/",
     languages: {
