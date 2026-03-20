@@ -241,5 +241,5 @@ export const CertificatePreviewDetails = ({
     content = <PortraitPreview {...sharedProps} />;
   }
 
-  return <div className="overflow-x-auto text-neutral-900">{content}</div>;
+  return <div className="text-neutral-900">{content}</div>;
 };

@@ -171,7 +171,7 @@ export const FloatingActionButtons = () => {
 
   return (
     <TooltipProvider delayDuration={300}>
-      <div className="fixed right-4 top-1/2 -translate-y-1/2 flex flex-col gap-2 z-50">
+      <div className="fixed z-50 flex gap-2 bottom-4 left-1/2 -translate-x-1/2 flex-row md:flex-col md:bottom-auto md:top-1/2 md:left-auto md:right-4 md:translate-x-0 md:-translate-y-1/2">
         <Tooltip>
           <TooltipTrigger asChild>
             <button
@@ -187,7 +187,7 @@ export const FloatingActionButtons = () => {
               )}
             </button>
           </TooltipTrigger>
-          <TooltipContent side="left">Export</TooltipContent>
+          <TooltipContent side="top">Export</TooltipContent>
         </Tooltip>
 
         <Tooltip>
@@ -200,7 +200,7 @@ export const FloatingActionButtons = () => {
               <Download className="w-4 h-4" />
             </button>
           </TooltipTrigger>
-          <TooltipContent side="left">Export fields/config</TooltipContent>
+          <TooltipContent side="top">Export fields/config</TooltipContent>
         </Tooltip>
 
         <Tooltip>
@@ -213,7 +213,7 @@ export const FloatingActionButtons = () => {
               <Upload className="w-4 h-4" />
             </button>
           </TooltipTrigger>
-          <TooltipContent side="left">Import fields/config</TooltipContent>
+          <TooltipContent side="top">Import fields/config</TooltipContent>
         </Tooltip>
 
         <Tooltip>
@@ -226,7 +226,7 @@ export const FloatingActionButtons = () => {
               {themeIcon}
             </button>
           </TooltipTrigger>
-          <TooltipContent side="left">{themeLabel}</TooltipContent>
+          <TooltipContent side="top">{themeLabel}</TooltipContent>
         </Tooltip>
 
         <Tooltip>
@@ -239,7 +239,7 @@ export const FloatingActionButtons = () => {
               <RotateCcw className="w-4 h-4" />
             </button>
           </TooltipTrigger>
-          <TooltipContent side="left">Reset form</TooltipContent>
+          <TooltipContent side="top">Reset form</TooltipContent>
         </Tooltip>
 
         <input
